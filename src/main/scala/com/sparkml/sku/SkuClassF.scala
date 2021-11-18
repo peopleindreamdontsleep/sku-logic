@@ -1,6 +1,6 @@
-package com.linkkids.sku
+package com.sparkml.sku
 
-import com.linkkids.skuc.utils
+import com.sparkml.skuc.utils
 import org.apache.spark.ml.classification.NaiveBayes
 import org.apache.spark.ml.evaluation.MulticlassClassificationEvaluator
 import org.apache.spark.ml.feature.{HashingTF, IDF, Tokenizer}

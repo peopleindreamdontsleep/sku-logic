@@ -1,4 +1,4 @@
-package com.linkkids.skuc;
+package com.sparkml.skuc;
 
 import java.io.*;
 import java.util.HashMap;

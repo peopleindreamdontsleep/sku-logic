@@ -1,4 +1,4 @@
-package com.linkkids.skuc;
+package com.sparkml.skuc;
 
 import org.wltea.analyzer.core.IKSegmenter;
 import org.wltea.analyzer.core.Lexeme;

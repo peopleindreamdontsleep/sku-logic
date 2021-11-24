@@ -15,9 +15,9 @@ public class DrinkPreProcess {
 
     public static void main(String[] args) {
         //给到商品库四级目录打标
-        File file = new File("D:\\logs\\food.csv");
+        File file = new File("D:\\logs\\bookcar.csv");
         //列出所有种类的文件夹
-        StringBuffer lineText=new StringBuffer();
+        StringBuilder lineText=new StringBuilder();
         HashSet<String> brandSet = new HashSet<String>();
 
         HashMap<String, String> labelMap = getLabelMap();
@@ -26,13 +26,12 @@ public class DrinkPreProcess {
         try {
             InputStreamReader read=new InputStreamReader(new FileInputStream(file));
             BufferedReader bufferedreader=new BufferedReader(read);
-            File f = new File("D:\\logs\\labelbrand4.txt");
+            File f = new File("D:\\logs\\bookbrand4.txt");
             OutputStream os = null;
             String contentLine;
             int i=0;
             while ((contentLine = bufferedreader.readLine())!=null){
-                String line = contentLine;
-                String[] drinkArr = line.split("\t");
+                String[] drinkArr = contentLine.split("\t");
                 if (drinkArr.length>7){
                     String title=drinkArr[1];
                     String brandName=drinkArr[2];
@@ -57,7 +56,7 @@ public class DrinkPreProcess {
                     }
 
                 }else{
-                    System.out.println(line);
+                    System.out.println(contentLine);
                 }
 
             }

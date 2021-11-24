@@ -29,7 +29,7 @@ public class ikAnalyzer {
     }
 
     public static void main(String[] args) {
-        System.out.println(ikAnalyzer("健素加金装1段"));
+        System.out.println(ikAnalyzer("米奇18秋K84SU221-110婴幼儿羽绒服黑色米奇18秋K84SU221-110婴幼儿羽绒服黑色|米奇羽绒服|棉品|针织服饰|外出服|羽绒服"));
 
 
     }
